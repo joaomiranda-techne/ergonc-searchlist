@@ -1,0 +1,34 @@
+{
+  "name": "ergonc-searchlist",
+  "displayName": "ErgonC - Search List",
+  "description": "Extensão para navegar em arquivos ErgonC",
+  "version": "1.0.0",
+  "publisher": "jvfm",
+  "license": "MIT",
+  "engines": {
+      "vscode": "^0.10.5"
+  },
+  "categories": [
+      "Other"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+      "commands": [
+          {
+              "command": "ergonc-searchlist",
+              "title": "ErgonC - Search List"
+          }
+      ]
+  },
+  "scripts": {
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+      "@types/node": "^10.0.0",
+      "typescript": "^3.7.5",
+      "vscode": "^1.1.36"
+  }
+}
